@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import InteractiveWidget from "@/components/InteractiveWidget";
 import About from "@/components/About";
 import Features from "@/components/Features";
+import ModuleExplorer from "@/components/ModuleExplorer";
 import FAQ from "@/components/FAQ";
 import Launch from "@/components/Launch";
 import Footer from "@/components/Footer";
@@ -27,7 +28,10 @@ export default function Home() {
         {/* About Section */}
         <About />
 
-        {/* Features Section */}
+        {/* Interactive Module Explorer (New Features Showcase) */}
+        <ModuleExplorer />
+
+        {/* Core Coming Soon Features Grid */}
         <Features />
 
         {/* FAQ Section */}
