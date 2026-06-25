@@ -22,10 +22,10 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 glass-panel border-b border-teal-500/10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="flex items-center space-x-3 group">
-          <div className="relative flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-500 to-sky-500 p-0.5 shadow-md shadow-teal-500/15 group-hover:shadow-teal-500/25 transition-shadow">
+        <a href="#" className="flex items-center space-x-2 sm:space-x-3 group">
+          <div className="relative flex items-center justify-center w-8.5 h-8.5 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-teal-500 to-sky-500 p-0.5 shadow-md shadow-teal-500/15 group-hover:shadow-teal-500/25 transition-shadow">
             <div className="w-full h-full bg-white dark:bg-slate-900 rounded-[10px] flex items-center justify-center transition-colors">
               <svg
                 viewBox="0 0 24 24"
@@ -45,17 +45,17 @@ export default function Header() {
             </div>
           </div>
           <div className="flex flex-col">
-            <span className="text-lg font-bold tracking-tight text-slate-800 dark:text-slate-100 font-sans leading-none sm:text-xl">
+            <span className="text-sm font-bold tracking-tight text-slate-800 dark:text-slate-100 font-sans leading-none min-[360px]:text-base sm:text-lg lg:text-xl">
               SureCure <span className="text-teal-600 dark:text-teal-400 font-semibold">Visit</span>
             </span>
-            <span className="text-[10px] sm:text-xs text-slate-500 dark:text-slate-400 tracking-wider uppercase font-semibold mt-0.5">
+            <span className="text-[9px] sm:text-xs text-slate-500 dark:text-slate-400 tracking-wider uppercase font-semibold mt-0.5">
               NLR Group
             </span>
           </div>
         </a>
 
         {/* Right side items */}
-        <div className="flex items-center space-x-3 sm:space-x-6">
+        <div className="flex items-center space-x-2 sm:space-x-6">
           {/* Theme Toggle */}
           <button
             onClick={toggleTheme}
@@ -87,7 +87,7 @@ export default function Header() {
           <a
             href="#notify-me"
             onClick={scrollToSubscribe}
-            className="flex items-center space-x-1.5 px-4 sm:px-5 py-2 sm:py-2.5 bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 text-white rounded-xl font-medium text-xs sm:text-sm shadow-lg shadow-teal-600/10 hover:shadow-teal-600/20 active:scale-95 transition-all"
+            className="hidden min-[380px]:flex items-center space-x-1.5 px-3 py-2 sm:px-5 sm:py-2.5 bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 text-white rounded-xl font-medium text-xs sm:text-sm shadow-lg shadow-teal-600/10 hover:shadow-teal-600/20 active:scale-95 transition-all"
           >
             <span>Notify Me</span>
             <ArrowRight className="w-4 h-4 hidden sm:inline" />
