@@ -122,16 +122,17 @@ export default function Hero() {
           </div>
 
           {/* Right Column: Premium CSS Mobile App Mockup */}
-          <div className="lg:col-span-5 flex justify-center items-center relative">
+          <div className="lg:col-span-5 flex justify-center items-center relative w-full overflow-hidden py-4">
             {/* Phone Backdrop glow */}
             <div className="absolute w-72 h-96 bg-gradient-to-tr from-teal-500 to-sky-500 opacity-20 dark:opacity-30 rounded-full blur-3xl -z-10" />
 
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="w-[280px] h-[560px] sm:w-[300px] sm:h-[600px] rounded-[48px] bg-slate-950 p-3.5 shadow-2xl border-4 border-slate-800 relative overflow-hidden"
-            >
+            <div className="scale-90 min-[360px]:scale-95 sm:scale-100 origin-center transition-transform">
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                className="w-[280px] h-[560px] sm:w-[300px] sm:h-[600px] rounded-[48px] bg-slate-950 p-3.5 shadow-2xl border-4 border-slate-800 relative overflow-hidden"
+              >
               {/* Internal Bezels */}
               <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-950 rounded-b-2xl z-40 flex items-center justify-center">
                 {/* Speaker Grill */}
@@ -170,7 +171,7 @@ export default function Hero() {
                   </div>
                   <div className="flex items-center space-x-1.5 px-2 py-1 rounded-full bg-slate-100 dark:bg-slate-800 text-[8px] text-slate-600 dark:text-slate-300">
                     <MapPin className="w-2.5 h-2.5 text-teal-500" />
-                    <span className="font-medium">Bangalore</span>
+                    <span className="font-medium">Hyderabad</span>
                   </div>
                 </div>
 
@@ -313,6 +314,7 @@ export default function Hero() {
               </div>
             </motion.div>
           </div>
+        </div>
           
         </div>
       </div>

@@ -201,30 +201,30 @@ export default function ModuleExplorer() {
         {/* Explorer Wrapper */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           
-          {/* Left Column: Vertical Navigation */}
-          <div className="lg:col-span-5 flex flex-col space-y-3 justify-center text-left">
+          {/* Left Column: Navigation - Horizontal Scroll on Mobile, Vertical List on Desktop */}
+          <div className="lg:col-span-5 flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible pb-4 lg:pb-0 gap-3 scrollbar-none snap-x snap-mandatory justify-start">
             {modules.map((mod) => (
               <button
                 key={mod.id}
                 onClick={() => setActiveModule(mod.id)}
-                className={`p-4 rounded-2xl border text-left flex items-start space-x-4 cursor-pointer transition-all duration-300 ${
+                className={`p-3 sm:p-4 rounded-2xl border text-left flex items-center lg:items-start space-x-3 sm:space-x-4 cursor-pointer transition-all duration-300 shrink-0 snap-align-start ${
                   activeModule === mod.id
                     ? "bg-teal-500/5 border-teal-500 dark:border-teal-500/50 shadow-md shadow-teal-500/5"
                     : "border-slate-100 dark:border-slate-900/60 bg-white/50 dark:bg-slate-900/30 hover:border-slate-200 dark:hover:border-slate-800"
                 }`}
               >
-                <div className={`p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shrink-0 ${
+                <div className={`p-2.5 sm:p-3 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-100 dark:border-slate-800 shrink-0 ${
                   activeModule === mod.id ? "text-teal-600 dark:text-teal-400" : "text-slate-400"
                 }`}>
                   {mod.icon}
                 </div>
                 <div className="space-y-0.5 leading-tight">
-                  <h4 className={`text-sm sm:text-base font-bold ${
+                  <h4 className={`text-xs sm:text-sm lg:text-base font-bold whitespace-nowrap ${
                     activeModule === mod.id ? "text-slate-900 dark:text-slate-100" : "text-slate-600 dark:text-slate-400"
                   }`}>
                     {mod.title}
                   </h4>
-                  <p className="text-xs text-slate-400 dark:text-slate-500">
+                  <p className="text-[10px] sm:text-xs text-slate-400 dark:text-slate-500 hidden lg:block">
                     {mod.subtitle}
                   </p>
                 </div>
@@ -615,7 +615,7 @@ export default function ModuleExplorer() {
                       className="space-y-4 text-left"
                     >
                       <p className="text-xs text-slate-400">
-                        Locate verified emergency clinics and hospital departments around Bangalore.
+                        Locate verified emergency clinics and hospital departments around Hyderabad.
                       </p>
 
                       <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
@@ -655,7 +655,7 @@ export default function ModuleExplorer() {
                 <span>Secure SSL Encryption</span>
                 <span className="flex items-center space-x-1">
                   <MapPin className="w-3.5 h-3.5 text-teal-500" />
-                  <span>Bangalore Hub</span>
+                  <span>Hyderabad Hub</span>
                 </span>
               </div>
 

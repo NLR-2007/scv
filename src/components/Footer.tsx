@@ -138,15 +138,20 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="flex items-center space-x-2.5">
-                <Phone className="w-4 h-4 text-teal-500 shrink-0" />
-                <a href="tel:8341494604" className="hover:text-teal-500 transition-colors">
-                  +91 8341494604
-                </a>
+              <div className="flex items-start space-x-2.5">
+                <Phone className="w-4 h-4 text-teal-500 shrink-0 mt-0.5" />
+                <div className="flex flex-col space-y-1">
+                  <a href="tel:8341494604" className="hover:text-teal-500 transition-colors">
+                    +91 8341494604
+                  </a>
+                  <a href="tel:7989405968" className="hover:text-teal-500 transition-colors">
+                    +91 7989405968
+                  </a>
+                </div>
               </div>
               <div className="flex items-start space-x-2.5">
                 <MapPin className="w-4 h-4 text-teal-500 shrink-0 mt-0.5" />
-                <span>NLR Corporate Towers, Residency Road, Bangalore, KA, India</span>
+                <span>Hyd Bachupally Bowrmpet</span>
               </div>
             </div>
           </div>
