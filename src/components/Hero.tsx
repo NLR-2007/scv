@@ -142,7 +142,7 @@ export default function Hero() {
               </div>
 
               {/* Screen Contents */}
-              <div className="w-full h-full bg-slate-55 dark:bg-slate-900 rounded-[36px] overflow-hidden flex flex-col relative text-slate-800 dark:text-slate-100 font-sans select-none border border-slate-850">
+              <div className="w-full h-full bg-slate-50 dark:bg-slate-900 rounded-[36px] overflow-hidden flex flex-col relative text-slate-800 dark:text-slate-100 font-sans select-none border border-slate-850">
                 {/* Status Bar */}
                 <div className="h-10 pt-4 px-6 flex justify-between items-center text-[10px] text-slate-500 font-medium z-30">
                   <span>9:41 AM</span>
@@ -297,7 +297,7 @@ export default function Hero() {
                 </div>
 
                 {/* Simulated Bottom Navigation */}
-                <div className="h-14 border-t border-slate-100 dark:border-slate-800/60 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-6 flex justify-between items-center text-[8px] text-slate-400 font-bold z-30">
+                <div className="h-14 border-t border-slate-100 dark:border-slate-800/60 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md px-6 flex justify-between items-center text-[8px] text-slate-400 font-bold z-30 rounded-b-[34px]">
                   <div className="flex flex-col items-center space-y-0.5 text-teal-500">
                     <span className="text-xs">🏠</span>
                     <span>Home</span>
