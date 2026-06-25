@@ -251,12 +251,16 @@ export default function Hero() {
                       <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center font-bold text-xs text-teal-600 border border-slate-200/40 dark:border-slate-700/40">
                         👩‍⚕️
                       </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center space-x-1.5">
-                          <h5 className="text-[11px] font-bold text-slate-900 dark:text-slate-150 truncate">Dr. Ananya Sharma</h5>
-                          <span className="text-[7px] font-bold bg-emerald-50 dark:bg-emerald-950/45 text-emerald-600 dark:text-emerald-400 px-1.5 py-0.5 rounded-full border border-emerald-500/10">Verified</span>
+                      <div className="flex-1 min-w-0 text-left">
+                        <h5 className="text-[12px] font-bold text-slate-900 dark:text-slate-100 leading-normal">
+                          Dr. Ananya Sharma
+                        </h5>
+                        <div className="flex items-center space-x-1.5 mt-0.5">
+                          <span className="text-[7px] font-bold bg-emerald-50 dark:bg-emerald-950/45 text-emerald-600 dark:text-emerald-400 px-1.5 py-0.5 rounded-full border border-emerald-500/10">
+                            Verified
+                          </span>
+                          <span className="text-[8px] text-slate-500 truncate">MD General • 8 yrs exp</span>
                         </div>
-                        <p className="text-[8px] text-slate-500">MD General Medicine • 8 yrs exp</p>
                       </div>
                     </div>
                     <div className="grid grid-cols-2 gap-2 text-center text-[9px]">
