@@ -87,7 +87,7 @@ export default function Header() {
           <a
             href="#notify-me"
             onClick={scrollToSubscribe}
-            className="hidden min-[380px]:flex items-center space-x-1.5 px-3 py-2 sm:px-5 sm:py-2.5 bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 text-white rounded-xl font-medium text-xs sm:text-sm shadow-lg shadow-teal-600/10 hover:shadow-teal-600/20 active:scale-95 transition-all"
+            className="hidden sm:flex items-center space-x-1.5 px-5 py-2.5 bg-gradient-to-r from-teal-600 to-sky-600 hover:from-teal-500 hover:to-sky-500 text-white rounded-xl font-medium text-sm shadow-lg shadow-teal-600/10 hover:shadow-teal-600/20 active:scale-95 transition-all"
           >
             <span>Notify Me</span>
             <ArrowRight className="w-4 h-4 hidden sm:inline" />
