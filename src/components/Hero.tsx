@@ -176,7 +176,7 @@ export default function Hero() {
                 </div>
 
                 {/* Screen Scrollable Body (Mock App Screen) */}
-                <div className="flex-1 overflow-y-auto px-4 py-3 space-y-4 bg-slate-50 dark:bg-slate-950/40 relative z-20">
+                <div className="flex-1 overflow-y-auto scrollbar-none px-4 py-3 space-y-4 bg-slate-50 dark:bg-slate-950/40 relative z-20">
                   
                   {/* Dynamic Simulation: Tracking Map */}
                   <div className="relative h-44 rounded-2xl bg-slate-100 dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/60 overflow-hidden flex flex-col justify-end p-2.5 shadow-sm">
