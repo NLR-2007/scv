@@ -87,6 +87,9 @@ export default function Footer() {
             <p className="text-xs text-slate-450 dark:text-slate-500 max-w-sm leading-relaxed">
               SureCure Visit is building India's next-generation home healthcare platform to connect you with verified clinical practitioners.
             </p>
+            <p className="text-xs text-slate-450 dark:text-slate-500">
+              Founder: <span className="font-semibold text-slate-700 dark:text-slate-300">Vamsi Krishna Reddy</span>
+            </p>
           </div>
 
           {/* Navigation Links */}
@@ -124,16 +127,21 @@ export default function Footer() {
               Contact & Inquiries
             </h4>
             <div className="space-y-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-              <div className="flex items-center space-x-2.5">
-                <Mail className="w-4 h-4 text-teal-500 shrink-0" />
-                <a href="mailto:info@surecurevisit.com" className="hover:text-teal-500 transition-colors">
-                  info@surecurevisit.com
-                </a>
+              <div className="flex items-start space-x-2.5">
+                <Mail className="w-4 h-4 text-teal-500 shrink-0 mt-0.5" />
+                <div className="flex flex-col space-y-1">
+                  <a href="mailto:surecurevist@gmail.com" className="hover:text-teal-500 transition-colors">
+                    surecurevist@gmail.com
+                  </a>
+                  <a href="mailto:nlrgroupofcompany@gmail.com" className="hover:text-teal-500 transition-colors">
+                    nlrgroupofcompany@gmail.com
+                  </a>
+                </div>
               </div>
               <div className="flex items-center space-x-2.5">
                 <Phone className="w-4 h-4 text-teal-500 shrink-0" />
-                <a href="tel:+918049281928" className="hover:text-teal-500 transition-colors">
-                  +91 80 4928 1928
+                <a href="tel:8341494604" className="hover:text-teal-500 transition-colors">
+                  +91 8341494604
                 </a>
               </div>
               <div className="flex items-start space-x-2.5">

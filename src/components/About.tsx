@@ -69,7 +69,7 @@ export default function About() {
                 SureCure Visit is building a unified, patient-centric home healthcare ecosystem. We connect families directly with certified, verified medical professionals for in-person consultations inside the safety and comfort of their own homes.
               </p>
               <p>
-                Backed by the strategic guidance of the <strong className="font-semibold text-slate-800 dark:text-slate-200">NLR GROUP OF COMPANIES</strong>, we are leveraging advanced routing algorithms, encrypted EHR storage, and verified doctor matching systems to deliver professional healthcare right to your doorstep.
+                Founded by <strong className="font-semibold text-slate-800 dark:text-slate-200">Vamsi Krishna Reddy</strong> and backed by the strategic guidance of the <strong className="font-semibold text-slate-800 dark:text-slate-200">NLR GROUP OF COMPANIES</strong>, we are leveraging advanced routing algorithms, encrypted EHR storage, and verified doctor matching systems to deliver professional healthcare right to your doorstep.
               </p>
             </motion.div>
 
